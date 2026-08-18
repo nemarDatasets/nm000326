@@ -2,8 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "Mainsah et al. 2025 — bigP3BCI: An Open, Diverse and Machine Learning Ready P300-based Brain-Computer Interface Dataset (Study C)",
-  "description": "BigP3BCI Study C is a P300-based brain-computer interface dataset comprising EEG recordings from 19 healthy subjects performing a visual speller task using a 6x6 checkerboard paradigm. The dataset contains single-session recordings with 32-channel EEG data sampled at 256 Hz, annotated with target and non-target event labels. This derivative dataset is part of the larger BigP3BCI collection, the largest public P300 BCI dataset, and is formatted according to BIDS standards with HED event annotations for machine learning applications.",
-  "methods_description": "EEG data were acquired using a g.USBamp amplifier (g.tec) with 32 channels arranged in a standard 10-20 montage at a sampling rate of 256 Hz with 60 Hz line frequency filtering. Participants performed a visual P300 speller task using a 6x6 checkerboard stimulus paradigm with online feedback in a laboratory setting. The experimental protocol included target and non-target visual stimuli with a trial interval of 0-1.0 seconds.",
+  "description": "BigP3BCI Study C is a P300-based brain-computer interface dataset comprising EEG recordings from 19 healthy subjects using a 6x6 checkerboard visual paradigm with target and non-target event classifications. This derivative dataset is part of the larger BigP3BCI collection, the largest public P300 BCI dataset containing recordings across multiple studies. The data were acquired at 256 Hz using 32-channel EEG with a standard 10-20 montage and are formatted according to BIDS standards with HED event annotations for standardized analysis and machine learning applications.",
+  "methods_description": "EEG data were acquired at a sampling rate of 256 Hz using 32 channels with a standard 10-20 montage on a g.USBamp amplifier (g.tec). The experimental paradigm employed a 6x6 checkerboard visual stimulus presentation with target and non-target event classifications. Single sessions were conducted per subject with a trial interval of 0-1.0 seconds. Line frequency was 60 Hz.",
   "license": "CC-BY-4.0",
   "dataset_type": "derivative",
   "authors": {
@@ -24,36 +24,29 @@
     {
       "term": "Brain-Computer Interfaces",
       "subject_scheme": "MeSH",
+      "scheme_uri": "https://id.nlm.nih.gov/mesh/",
       "value_uri": "http://id.nlm.nih.gov/mesh/D062207"
-    },
-    {
-      "term": "EEG"
     },
     {
       "term": "Event-Related Potentials, P300",
       "subject_scheme": "MeSH",
       "scheme_uri": "https://id.nlm.nih.gov/mesh/",
-      "value_uri": "https://id.nlm.nih.gov/mesh/D018913"
+      "value_uri": "http://id.nlm.nih.gov/mesh/D018913"
     },
     {
-      "term": "Visual Perception",
-      "subject_scheme": "MeSH",
-      "value_uri": "https://id.nlm.nih.gov/mesh/D014796"
+      "term": "EEG"
+    },
+    {
+      "term": "visual perception"
     },
     {
       "term": "speller paradigm"
     },
     {
-      "term": "checkerboard paradigm"
+      "term": "6x6 checkerboard"
     },
     {
       "term": "machine learning"
-    },
-    {
-      "term": "BIDS"
-    },
-    {
-      "term": "HED annotations"
     }
   ],
   "related_identifiers": [
@@ -100,5 +93,5 @@
     ".yaml",
     ".yml"
   ],
-  "source_hash": "28beac6b21ca16610b0487f7f4e5f2136e00117ea5a6a186f2f875315d3b6f2f"
+  "source_hash": "35ce7a2cf17e4c5412aa7e4ec36eec7e98418efd6f27bc3234d967607bbffb15"
 }
