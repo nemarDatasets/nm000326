@@ -1,9 +1,9 @@
 {
   "version": "2.0",
-  "pipeline_stage": "validated",
+  "pipeline_stage": "enriched",
   "title": "Mainsah et al. 2025 — bigP3BCI: An Open, Diverse and Machine Learning Ready P300-based Brain-Computer Interface Dataset (Study C)",
-  "description": "Study C of the bigP3BCI collection provides EEG recordings from 19 healthy participants using a 6x6 checkerboard P300 speller paradigm with error-related negativity (ERN). Data were recorded from 32 channels at 256 Hz with a g.USBamp amplifier and include target and non-target visual stimulus events annotated with HED. The dataset supports machine learning benchmarking of P300-based brain-computer interface classification.",
-  "methods_description": "EEG was recorded with a g.USBamp (g.tec) amplifier from 32 channels at 256 Hz in a laboratory setting (60 Hz line frequency, standard 10-20 montage). Participants used a P300 speller with a 6x6 checkerboard paradigm and online feedback, with a calibration-then-test design. Epochs span 0-1.0 s after stimulus onset.",
+  "description": "Study C of the bigP3BCI collection, which provides EEG recordings from 19 healthy participants using a 6x6 checkerboard P300 speller paradigm with error-related negativity (ERN) components. Data were recorded from 32 channels at 256 Hz with a g.USBamp amplifier, with target and non-target flash events annotated using HED. The dataset is a MOABB-derived BIDS version of the larger PhysioNet bigP3BCI resource, which aims to be an open, diverse and machine-learning-ready P300 BCI dataset.",
+  "methods_description": "EEG was recorded from 32 channels (standard 10-20 montage) using a g.USBamp (g.tec) at 256 Hz with 60 Hz line frequency. Participants performed a P300 speller task on a 6x6 checkerboard grid with online feedback in a laboratory setting, using a calibration-then-test design. Epochs span 0-1.0 s after stimulus, labeled Target or NonTarget.",
   "license": "CC-BY-4.0",
   "dataset_type": "derivative",
   "authors": {
@@ -28,19 +28,16 @@
       "term": "P300"
     },
     {
-      "term": "Brain-Computer Interfaces",
-      "subject_scheme": "MeSH",
-      "scheme_uri": "https://id.nlm.nih.gov/mesh/",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D062207"
+      "term": "brain-computer interface"
     },
     {
       "term": "speller"
     },
     {
-      "term": "error-related negativity"
+      "term": "event-related potentials"
     },
     {
-      "term": "event-related potentials"
+      "term": "error-related negativity"
     }
   ],
   "related_identifiers": [
@@ -87,5 +84,5 @@
     ".yaml",
     ".yml"
   ],
-  "source_hash": "35ce7a2cf17e4c5412aa7e4ec36eec7e98418efd6f27bc3234d967607bbffb15"
+  "source_hash": "145b9345a4e6a523f0a51cfa81466e5e5ebfefc54ad35bf9fa5ef2d128492694"
 }
